@@ -17,27 +17,10 @@
     },
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "rules": {
-        "no-constant-condition": ["error", { "checkLoops": false }],
-        "space-before-function-paren": [
-            "error",
-            { "anonymous": "always", "named": "never", "asyncArrow": "never" }
-        ],
-        "no-const-assign": "error",
-        "no-this-before-super": "error",
-        "no-undef": "error",
-        "no-unreachable": "error",
-        "no-unused-vars": "error",
-        "constructor-super": "error",
-        "quotes": ["error", "single", { "avoidEscape": true }],
-        "semi": ["error", "always"],
-        "valid-typeof": "error",
         "react/prop-types": "off",
         "react/display-name": "off",
         "react/no-string-refs": "error",
-        "eqeqeq": ["error", "always", { "null": "ignore" }],
-        "newline-after-var": ["error", "always"],
-        "newline-before-return": "error",
-        "lines-between-class-members": ["error", "always"],
+        // "newline-before-return": "error",
         "filenames/match-regex": [
             2,
             "^(([A-Z][a-z0-9]+)([A-Z][a-z0-9]+)*|index)",
@@ -52,10 +35,16 @@
                 "beforeClosing": "never"
             }
         ],
-        "no-extra-parens": "error",
+        // "no-extra-parens": "error",
+        //Possible Errors
+        "no-constant-condition": ["error", { "checkLoops": false }],
         "no-console": 0,
         "no-template-curly-in-string": "error",
-        // Styling
+
+        //Best Practicies
+        "eqeqeq": ["error", "always", { "null": "ignore" }],
+
+        //Styling
         "array-bracket-spacing": ["error", "never"],
         "brace-style": ["error"],
         "comma-spacing": ["error", { "before": false, "after": true }],
@@ -70,6 +59,7 @@
             { "afterColon": true }
         ],
         "keyword-spacing": ["error", { "before": true }, { "after": false }],
+        "lines-between-class-members": ["error", "always"],
         "no-bitwise": "error",
         "no-lonely-if": "error",
         // "no-mixed-operators": "error",
@@ -79,7 +69,13 @@
         "no-whitespace-before-property": "error",
         "operator-linebreak": ["error", "before"],
         "padded-blocks": ["error", "never"],
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "semi": ["error", "always"],
         "semi-style": ["error", "last"],
+        "space-before-function-paren": [
+            "error",
+            { "anonymous": "always", "named": "never", "asyncArrow": "never" }
+        ],
         "space-in-parens": ["error", "never"],
         "switch-colon-spacing": "error",
         "wrap-regex": "error",
